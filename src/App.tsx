@@ -4,8 +4,6 @@ import { UserList } from './components/UserList';
 import type { User } from './types/user';
 import './App.css';
 
-
-
 function App() {
 	const [users, setUsers] = useState<User[]>([]);
 
@@ -13,7 +11,7 @@ function App() {
 		fetchUsers().then(setUsers);
 	}, []);
 
-	return <UserList users={users} />
+	return <UserList users={users} />;
 }
 
 export default App;
